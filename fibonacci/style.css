@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #24262A;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
+
+#number-wanted {
+    font-size: 50px;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+#btn-result {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 1em 2em;
+    color: white;
+    cursor: pointer;
+}
+
+#label {
+    color: white;
+    font-size: 50px;
+}
+
+.result-paragraph {
+    color: white;
+    font-size: 35px;
+}
+
+#table-result1 {
+    color: white;
+    font-size: 25px;
+}
+
+th,
+td {
+    width: 200px;
+    text-align: center;
+}
+
