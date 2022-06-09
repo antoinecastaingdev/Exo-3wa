@@ -29,7 +29,7 @@
         echo "votre nom commence par une voyelle <br>";
     }
     if ($nom[0] !== "A" && $nom[0] !== "E" && $nom[0] !== "I" && $nom[0] !== "O" && $nom[0] !== "U" && $nom[0] !== "Y") {
-        echo "votre nom commence par une consonne <br>";
+        echo "Votre nom commence par une consonne <br>";
     }
 
 

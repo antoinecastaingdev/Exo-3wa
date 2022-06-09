@@ -1,5 +1,5 @@
 <?php
-include_once('commun.inc.php');
+include_once('commun.inc-corrigé.php');
 $nom = 'Olivier';
 ?>
 <!DOCTYPE html>
