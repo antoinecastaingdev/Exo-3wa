@@ -31,23 +31,28 @@ $date = new DateTime("now");
 	<div>
 		<?php
 		// Afficher les messages
-		echo "Bonjour $nom.<br />";
-		echo 'Bienvenue sur ', NOM_SITE, '.<br />';
-		echo "nous sommes le " . $date->format('l d F Y') . "<br>";
+		echo "Bonjour $nom.<br>";
+		echo 'Bienvenue sur ', NOM_SITE, '.<br>';
+		echo "Nous sommes le " . $date->format('l d F Y') . "<br>";
+
 		// Compter le nombre de lettres du nom.
-		$i = 0;
-		while ($nom[$i] ?? false) {
-			$i++;
-		}
-		echo "Votre nom comporte $i lettres.<br />";
+		echo "Votre nom comporte " . strlen($nom) . " lettres.<br>";
+
 		// Déterminer si le nom commence par une voyelle ou une consonne.
-
 		$voyelles = ["a", "e", "o", "i", "u", "y"];
-		if (in_array(strtolower($nom[0]), $voyelles)) {
-			echo 'Votre nom commence par une voyelle.<br />';
-		}
-
+		$consonnes = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z"];
+		$nameFirstLetterType = "Erreur <br>";
+		if (in_array(strtolower($nom[0]), $voyelles)) $nameFirstLetterType = 'Votre nom commence par une voyelle.<br>';
+		if (in_array(strtolower($nom[0]), $consonnes)) $nameFirstLetterType = 'Votre nom commence par une consonne.<br>';
+		echo $nameFirstLetterType;
+		$vowelCount = preg_match_all('/[AEIOUY]/i', $nom);
+		echo "Votre nom comporte $vowelCount voyelles <br>";
+		$authorCount = count($auteurs);
+		echo "Il y a $authorCount dans la liste <br>";
+		$favoriteAuthor = $auteurs[rand(0, $authorCount)];
+		echo "Mon auteur favori est $favoriteAuthor";
 		?>
+
 		<!-- Afficher le tableau des auteurs. -->
 		<table>
 			<tr>
