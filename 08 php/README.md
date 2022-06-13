@@ -1,4 +1,4 @@
-#   EXERCICE 8 - Récupérer des données passées par URL  #
+  #   EXERCICE 8 - Récupérer des données passées par URL  #
 
 Dans cette exeercice, nous allons apprendre à passer des informations d'une page à une autre par URL.
 
