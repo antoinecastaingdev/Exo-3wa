@@ -1,4 +1,4 @@
-# EXERCICE 1 : LE POINT
+    # EXERCICE 1 : LE POINT
 
 1) Créez une classe Point qui possède deux attributs x et y correspondant aux coordonées du point. Ces deux attributs/propriétés doivent être affectés par le constructeur.
 
